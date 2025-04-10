@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - My Personal Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Same navbar as index.html -->
+    </nav>
+
+    <div class="container mt-4">
+        <h1>My Books</h1>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="search-books" placeholder="Search books...">
+            </div>
+            <div class="col-md-6 text-end">
+                <a href="add-book.html" class="btn btn-primary">Add New Book</a>
+            </div>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="books-table">
+                <!-- Books will be loaded here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/books.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
